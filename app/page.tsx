@@ -1,11 +1,14 @@
 "use client";
 import { WavyBackground } from "@/components/ui/wavy-background";
 import { BlurText } from "@/components/BlurText";
+import AboutSection from "@/components/AboutSection";
+
 
 export default function Home() {
   return (
-    <>
-    <div>
+    <main>
+      {/* Hero Section */}
+    <section id="home" className="relative">
     <WavyBackground className="max-w-4xl mx-auto pb-40">
       <BlurText
         text="Hello, I'am Hervino Islami Fasha"
@@ -14,7 +17,12 @@ export default function Home() {
         duration={3000}
       />
     </WavyBackground>
-    </div>
-    </>
+    </section>
+      {/* About Section */}
+    <section id="about" className="relative">
+    <AboutSection />
+    </section>
+    {/* Other sections can be added here */}
+    </main>
   );
 }
