@@ -186,7 +186,9 @@ function IconContainer({
           style={{ width: widthIcon, height: heightIcon }}
           className="flex items-center justify-center"
         >
-          {icon}
+          <div className="w-full h-full text-gray-700 dark:text-white flex items-center justify-center">
+            {icon}
+          </div>
         </motion.div>
       </motion.div>
     </a>

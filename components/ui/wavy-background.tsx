@@ -66,11 +66,11 @@ export const WavyBackground = ({
     };
 
     const waveColors = colors ?? [
-        "#38bdf8",
-        "#818cf8",
-        "#c084fc",
-        "#e879f9",
-        "#22d3ee",
+        "#CD1C18",
+        "#A41613",
+        "#E6312C",
+        "#CC5E9F",
+        "#FFA6C9",
     ];
 
     const drawWave = (n: number) => {

@@ -1,14 +1,19 @@
 "use client";
 
 import { FloatingDock, FloatingDockItem } from "@/components/ui/floating-dock";
-import { Home, Github, Linkedin, Instagram } from "lucide-react";
+import { Home, User, Github, Linkedin, Instagram } from "lucide-react";
 
 export default function Footer() {
   const items: FloatingDockItem[] = [
     {
       title: "Home",
-      href: "/",
+      href: "#home",
       icon: <Home className="h-5 w-5" />,
+    },
+    {
+      title: "About",
+      icon: <User className="w-6 h-6" />, // icon About
+      href: "#about", // langsung scroll ke section About
     },
     {
       title: "GitHub",
@@ -17,7 +22,7 @@ export default function Footer() {
     },
     {
       title: "LinkedIn",
-      href: "https://linkedin.com/in/username",
+      href: "https://www.linkedin.com/in/hervino-islami-fasha-447953340/",
       icon: <Linkedin className="h-5 w-5" />,
     },
     {

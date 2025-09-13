@@ -6,7 +6,7 @@ export default function AboutSection() {
   const y = useTransform(scrollY, [0, 400], [0, -100]);
 
   return (
-    <div className="relative w-full h-screen flex items-center justify-center bg-gray-900 text-white">
+    <div className="relative w-full h-screen flex items-center justify-center bg-black text-white">
       {/* Parallax background */}
       <motion.div
         style={{ y }}
