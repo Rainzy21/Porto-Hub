@@ -7,10 +7,10 @@ import AboutSection from "@/components/AboutSection";
 
 export default function Home() {
   return (
-    <main>
+    <main className="[&>section]:py-20">
       {/* Hero Section */}
-      <section id="home" className="relative">
-        <WavyBackground className="max-w-4xl mx-auto flex flex-col items-center justify-center gap-6">
+      <section id="home" className=" snap-start relative">
+        <WavyBackground className=" will-change-transform max-w-4xl mx-auto flex flex-col items-center justify-center gap-6">
           {/* BlurText di atas */}
           <BlurText
             text="Hello, I'am Hervino Islami Fasha"
@@ -18,7 +18,6 @@ export default function Home() {
             delay={10}
             duration={5000}
           />
-          
           {/* TrueFocus di bawah BlurText */}
           <TrueFocus
             sentence="Student, FrontEnd, Designer"
@@ -33,15 +32,20 @@ export default function Home() {
           />
         </WavyBackground>
       </section>
-      <ScrollVelocity
-          texts={["Creative", "Developer"]}
-          velocity={150}
-          parallaxClassName="mt-[-4rem]" // jarak ke AboutSection
-          scrollerClassName=""
-          scrollerStyle={{ color: "white" }}
-        />
+      <section id="scroll-text" className=" snap-start relative w-full flex justify-center">
+        <div className="max-w-screen">
+          <ScrollVelocity
+            texts={["Creative", "Developer"]}
+            velocity={130}
+            numCopies={5}
+            parallaxClassName="mt-5" // jarak rapat ke about, tidak dempet
+            scrollerClassName="whitespace-nowrap"
+            scrollerStyle={{ color: "white" }}
+          />
+        </div>
+      </section>
       {/* About Section */}
-      <section id="about" className="relative w-full h-screen parallax-container">
+      <section id="about" className="snap-start relative w-full min-h-screen flex items-center justify-center overflow-hidden">
         <AboutSection />
       </section>
     </main>
