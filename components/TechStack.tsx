@@ -36,7 +36,7 @@ export function TechStack() {
                 key={tech.name}
                 initial={{ opacity: 0, scale: 0.8, y: 30 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                transition={{ duration: 0.5, delay: index * 0.001 }}
                 whileHover={{ scale: 1.2 }}
             >
                 <Card className="flex items-center justify-center p-4 bg-zinc-900 border border-zinc-700 shadow-md">
